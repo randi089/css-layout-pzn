@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: [cline1] 200px [cline2] auto [cline3] 200px [cline4];
+        grid-template-rows: [rline1] 500px [rline2] auto [rline3];
+      }
+
+      .content {
+        background-color: aqua;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Content 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus impedit fuga libero laboriosam
+          excepturi blanditiis. Laborum tempore ab accusantium expedita, repudiandae incidunt molestiae placeat
+          consequuntur nesciunt? Corporis, fuga? Laudantium, labore.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Content 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti explicabo labore deserunt quod doloremque
+          suscipit veritatis placeat dolorum delectus, molestias qui saepe quas dignissimos exercitationem unde sapiente
+          perferendis voluptates reprehenderit.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Content 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur fugiat laboriosam? Modi
+          minima sit deleniti, dicta magnam quidem delectus recusandae iure voluptatum excepturi qui animi a dignissimos
+          quasi iusto!
+        </p>
+      </div>
+      <div class="content">
+        <h1>Content 4</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates sit culpa laborum libero omnis excepturi
+          aliquid non ipsum fugit eius cumque quos laudantium, perferendis dignissimos corporis enim dicta repellat
+          quae?
+        </p>
+      </div>
+      <div class="content">
+        <h1>Content 5</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestias necessitatibus accusantium, animi
+          facilis asperiores sint cum quia voluptatem ullam accusamus fuga voluptate, laborum illum impedit sunt saepe
+          optio odit?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
