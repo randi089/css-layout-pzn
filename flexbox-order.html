@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Order</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .content {
+        width: 200px;
+        background-color: aqua;
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" style="order: 2">
+        <h1>Ini Konten 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, blanditiis. Odio illum quos incidunt fuga,
+          quod quae deleniti quis rerum consequatur cupiditate neque repellendus modi dignissimos dolor enim, cumque
+          voluptatibus.
+        </p>
+      </div>
+      <div class="content" style="order: 3">
+        <h1>Ini Konten 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium illum deserunt illo corporis
+          praesentium inventore labore, harum, cupiditate, aliquid sed? Debitis repellat dicta error! Sapiente eum
+          impedit provident tenetur.
+        </p>
+      </div>
+      <div class="content" style="order: 1">
+        <h1>Ini Konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem aliquam rerum praesentium eligendi
+          deleniti dignissimos modi maxime nemo facere? Ab at mollitia atque quam! Expedita animi magnam minus velit!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
