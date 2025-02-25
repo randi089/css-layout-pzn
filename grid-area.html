@@ -7,39 +7,27 @@
     <style>
       .container {
         display: grid;
-        grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
-        grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];
-      }
-
-      .content {
-        background-color: aqua;
-        border: 2px solid blue;
-        padding: 10px;
-        margin: 10px;
+        grid-template-columns: 100px auto 100px;
+        grid-template-rows: 50px auto 100px;
+        grid-template-areas:
+          "header header header"
+          ". content ."
+          "footer footer footer";
       }
 
       .header {
         background-color: aqua;
-        grid-column-start: cline1;
-        grid-column-end: cline4;
-        grid-row-start: rline1;
-        grid-row-end: rline2;
+        grid-area: header;
       }
 
       .footer {
         background-color: aqua;
-        grid-column-start: cline1;
-        grid-column-end: cline4;
-        grid-row-start: rline3;
-        grid-row-end: rline4;
+        grid-area: footer;
       }
 
       .content {
         background-color: bisque;
-        grid-column-start: cline2;
-        grid-column-end: cline3;
-        grid-row-start: rline2;
-        grid-row-end: rline3;
+        grid-area: content;
       }
     </style>
   </head>
